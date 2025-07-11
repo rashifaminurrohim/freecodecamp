@@ -1,0 +1,12 @@
+** start of script.js **
+
+const frankenSplice = (arrays1, arrays2, index) => {
+  const arr2Copy = arrays2.slice(0, arrays2.length);
+  arr2Copy.splice(index, 0, ...arrays1);
+  return arr2Copy;
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5], 1));
+
+** end of script.js **
+

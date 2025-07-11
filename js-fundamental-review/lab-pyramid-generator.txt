@@ -1,0 +1,39 @@
+** start of script.js **
+
+const pyramid = (char, rows, isUpsideDown)  => {
+  let line = '';
+
+  if (isUpsideDown) {
+    for (let i = rows; i > 0; i--) {
+      line += "\n";
+      // cetak spasi
+      for (let j = 1; j <= rows - i; j++) {
+        line += " ";
+      }
+      // cetak segitiga
+      for (let k = 1; k <= 2*i-1 ; k++) {
+        line += char
+      }
+    }
+    line += "\n";
+  } else {
+    for (let i = 1; i <= rows; i++) {
+      line += "\n";
+      // cetak spasi
+      for (let j = 1; j <= rows - i; j++) {
+        line += " ";
+      }
+      // cetak segitiga
+      for (let k = 1; k <= 2*i-1 ; k++) {
+        line += char
+      }
+    }
+    line += "\n";
+  }
+  return line;
+}
+
+console.log(pyramid("o", 4, false));
+
+** end of script.js **
+

@@ -1,0 +1,16 @@
+** start of script.js **
+
+const chunkArrayInGroups = (arrays, num) => {
+  const chunkGroup = [];
+
+  for (let i = 0; i < arrays.length; i += num) {
+    const chunk = arrays.slice(i, i+num);
+    chunkGroup.push(chunk);
+  }
+  return chunkGroup;
+}
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+
+** end of script.js **
+

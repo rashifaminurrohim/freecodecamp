@@ -1,0 +1,56 @@
+** start of script.js **
+
+const getAverage = (scores) => {
+  let totalScore = 0;
+  const totalData = scores.length;
+  for (let score of scores) {
+    totalScore += score;
+  } 
+  const average = totalScore/totalData
+  return average;
+}
+
+const getGrade = (score) => {
+  if (score === 100) {
+    return "A+";
+  } else if (90 <= score && score <= 99) {
+    return "A";
+  } else if (80 <= score && score <= 89) {
+    return "B";
+  } else if (70 <= score && score <= 79) {
+    return "C";
+  } else if (60 <= score && score <= 69) {
+    return "D";
+  } else if (0 <= score && score <= 59) {
+    return "F"
+  } else {
+    return "input the right range of score!";
+  }
+}
+
+const hasPassingGrade = (score) => {
+  const studentGrade = getGrade(score);
+  const belowMinScore = getGrade(59);
+  const wrongInput = getGrade(101);
+
+  if (studentGrade !== belowMinScore && studentGrade !== wrongInput) {
+    return true;
+  }
+
+  return false;
+}
+
+const studentMsg = (scores, score) => {
+  const isStudentPass = hasPassingGrade(score);
+  const averageClass = getAverage(scores);
+  const studentGrade = getGrade(score)
+
+  if (isStudentPass) {
+    return `Class average: ${averageClass}. Your grade: ${studentGrade}. You passed the course.`
+  } else {
+  return `Class average: ${averageClass}. Your grade: ${studentGrade}. You failed the course.`
+  }
+}
+
+** end of script.js **
+

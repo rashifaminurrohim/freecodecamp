@@ -1,0 +1,21 @@
+** start of script.js **
+
+const mutations = ["zyxwvutsrqponmlkjihgfedcba", "qrstu"];
+
+const mutation = (mutations) => {
+  for (let i = 1; i < mutations.length; i++) {
+    const prev = mutations[i-1].toLowerCase();
+    const current = mutations[i].toLowerCase();
+    for (let char of current) {
+      if (!prev.includes(char)){
+        return false;
+      }
+    }
+  }
+  return true
+}
+
+console.log(mutation(mutations));
+
+** end of script.js **
+

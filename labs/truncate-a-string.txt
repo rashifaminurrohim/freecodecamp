@@ -1,0 +1,21 @@
+** start of script.js **
+
+const truncateString = (word, num) => {
+  const wordLength = word.length;
+  if (wordLength <= num) {
+    return word;
+  }
+  const startWord = word.slice(0, num);
+  const endWord = word.slice(num, wordLength);
+  const appendedWord = ".".repeat(3);
+  return startWord + appendedWord;
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+console.log(truncateString("Peter Piper picked a peck of pickled peppers", 11));
+console.log(truncateString("A-", 1));
+console.log(truncateString("Absolutely Longer", 2));
+
+
+** end of script.js **
+

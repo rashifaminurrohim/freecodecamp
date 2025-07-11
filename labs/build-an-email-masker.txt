@@ -1,0 +1,24 @@
+** start of script.js **
+
+let email = "apple.pie@example.com";
+const maskEmail = (email) => {
+  const indexDomain = email.indexOf("@");
+  const domain = email.slice(indexDomain);
+
+  const username = email.slice(0,indexDomain);
+  const usernameLength = username.length;
+  const firstLetter = username.slice(0,1);
+  const lastLetter = username.slice(usernameLength - 1);
+
+  const usernameMask = username.substring(1, usernameLength - 1);
+  const masked = "*".repeat(usernameMask.length);
+
+  const maskedUsername = firstLetter + masked + lastLetter;
+  const maskedEmail = maskedUsername + domain;
+  return maskedEmail;
+}
+
+console.log(maskEmail(email));
+
+** end of script.js **
+
