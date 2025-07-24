@@ -20,11 +20,11 @@ Your background should randomly change to one of the colors in darkColorsArr eac
 Run the Tests (Ctrl + Enter)
 
 Tests
-1. You should resolve the syntax errors in the darkColorsArr array. Remember that array elements should be separated by commas.
-2. You should fix the capitalization error in the math.random() line.
-3. You should round darkColorsArr.length * Math.random() down to the nearest whole number.
-4. You should update the value of your body variable so that queryselector uses camel case.
-5. You should fix "bg-hex-code" so it correctly references the id of bg-hex-code. Remember that id selectors in CSS start with a hash symbol (#).
-6. You should call the getRandomIndex function inside the darkColorsArr[getRandomIndex] line.
-7. You should fix the id name of "#click-btn" line to match the correct id name in the index.html file.
-8. You should not call the changeBackgroundColor function. Instead, you should pass the function reference to the addEventListener method.
+Passed:1. You should resolve the syntax errors in the darkColorsArr array. Remember that array elements should be separated by commas.
+Passed:2. You should fix the capitalization error in the math.random() line.
+Passed:3. You should round darkColorsArr.length * Math.random() down to the nearest whole number.
+Passed:4. You should update the value of your body variable so that queryselector uses camel case.
+Passed:5. You should fix "bg-hex-code" so it correctly references the id of bg-hex-code. Remember that id selectors in CSS start with a hash symbol (#).
+Passed:6. You should call the getRandomIndex function inside the darkColorsArr[getRandomIndex] line.
+Passed:7. You should fix the id name of "#click-btn" line to match the correct id name in the index.html file.
+Passed:8. You should not call the changeBackgroundColor function. Instead, you should pass the function reference to the addEventListener method.
