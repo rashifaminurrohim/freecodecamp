@@ -1,0 +1,12 @@
+** start of script.js **
+
+const confirmEnding = (first, second) => {
+  const secondStr = second.length;
+  const firstStr = first.slice(-secondStr);
+  const result = firstStr === second;
+  return result;
+}
+
+
+** end of script.js **
+

@@ -1,0 +1,6 @@
+** start of script.js **
+
+const convertCtoF = (celcius) => celcius * (9/5) + 32;
+
+** end of script.js **
+

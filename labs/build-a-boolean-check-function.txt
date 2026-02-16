@@ -1,0 +1,6 @@
+** start of script.js **
+
+const booWho = (input) => typeof input === 'boolean';
+
+** end of script.js **
+
